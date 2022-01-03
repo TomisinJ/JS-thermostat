@@ -28,3 +28,9 @@ As a user,
 So that I can see the temperature,
 I want the thermostat to start at 20 degrees
 ```
+
+```
+As a user,
+So that I can raise the temperature,
+I want to increase the temperature with an up function
+```
