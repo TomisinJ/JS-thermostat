@@ -34,3 +34,9 @@ As a user,
 So that I can raise the temperature,
 I want to increase the temperature with an up function
 ```
+
+```
+As a user,
+So that I do not decrease the temperature too much,
+I want the thermostat to have a minimum temperature
+```
