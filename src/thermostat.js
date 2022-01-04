@@ -27,11 +27,7 @@ class Thermostat{
     return this.temperature === this.MINIMUM_TEMPERATURE;
   }
 
-  getPowerSavingMode() {
-    return this.powerSavingMode;
+  isPowerSavingModeOn() {
+    return this.powerSavingMode === true;
   }
-
-  // isPowerSavingModeOn() {
-  //   return this.powerSavingMode === true;
-  // }
 };

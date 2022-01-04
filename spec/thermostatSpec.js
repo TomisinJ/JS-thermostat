@@ -29,7 +29,7 @@ describe('Thermostat', () => {
   });
 
   it('has Power Saving Mode on by default', () => {
-    expect(thermostat.getPowerSavingMode()).toBe(true);
+    expect(thermostat.isPowerSavingModeOn()).toBe(true);
   });
 
 });
