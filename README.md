@@ -21,7 +21,7 @@
 
 (In the challenges where we add an interface, low-usage will be indicated with green, medium-usage indicated with black, high-usage indicated with red.)
 ```
-## User Story
+## User Stories
 
 ```
 As a user,
@@ -39,4 +39,10 @@ I want to increase the temperature with an up function
 As a user,
 So that I do not decrease the temperature too much,
 I want the thermostat to have a minimum temperature
+```
+
+```
+As a user,
+So that I can save energy
+I want to turn power saving mode on and have a maximum temperature limit of 25 degrees
 ```
