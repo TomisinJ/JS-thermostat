@@ -37,4 +37,10 @@ describe('Thermostat', () => {
     expect(thermostat.isPowerSavingModeOn()).toBe(false);
   });
 
+  it('PSM can be turned off then on again', () => {
+    thermostat.switchPowerSavingModeOff();
+    thermostat.switchPowerSavingModeOn();
+    expect(thermostat.isPowerSavingModeOn()).toBe(true);  
+  });
+
 });
