@@ -32,4 +32,9 @@ describe('Thermostat', () => {
     expect(thermostat.isPowerSavingModeOn()).toBe(true);
   });
 
+  it('Power Saving Mode can be switched off', () => {
+    thermostat.switchPowerSavingModeOff();
+    expect(thermostat.isPowerSavingModeOn()).toBe(false);
+  });
+
 });
