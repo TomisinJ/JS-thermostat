@@ -44,5 +44,11 @@ I want the thermostat to have a minimum temperature
 ```
 As a user,
 So that I can save energy
-I want to turn power saving mode on and have a maximum temperature limit of 25 degrees
+I want to turn power saving mode on (and have a maximum temperature limit of 25 degrees)
+```
+
+```
+As a user, 
+So that I can regulate the energy use,
+When PSM is on the maximum temperature is 25 degrees
 ```
