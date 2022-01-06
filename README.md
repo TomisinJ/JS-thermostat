@@ -52,3 +52,9 @@ As a user,
 So that I can regulate the energy use,
 When PSM is on the maximum temperature is 25 degrees
 ```
+
+```
+As a user,
+So that I can regulate the temperature,
+The thermostat can be reset to 20 degrees
+```

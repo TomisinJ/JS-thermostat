@@ -8,6 +8,7 @@ class Thermostat{
     this.powerSavingMode = true;
     this.MAXIMUM_TEMPERATURE_PS_ON = 25;
     this.MAXIMUM_TEMPERATURE_PS_OFF = 32;
+    this.DEFAULT_TEMPERATURE = 20;
   };
 
   getCurrentTemperature() {
@@ -43,11 +44,15 @@ class Thermostat{
     this.powerSavingMode = true;
   }
 
-isMaximumTemperature() {
-  if (this.isPowerSavingModeOn()) {
-    return this.temperature === this.MAXIMUM_TEMPERATURE_PS_ON;
+  isMaximumTemperature() {
+    if (this.isPowerSavingModeOn()) {
+      return this.temperature === this.MAXIMUM_TEMPERATURE_PS_ON;
+    }
+    return this.temperature === this.MAXIMUM_TEMPERATURE_PS_OFF;
   }
-  return this.temperature === this.MAXIMUM_TEMPERATURE_PS_OFF;
-}
+
+  resetTemperature() {
+    this.temperature = this.DEFAULT_TEMPERATURE;
+  }
 
 };

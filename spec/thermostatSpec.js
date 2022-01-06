@@ -62,4 +62,11 @@ describe('Thermostat', () => {
     });
   });
 
+  it('can be reset to the default temperature 20 degrees', () => {
+    for (let i = 0; i < 3; i++) {
+      thermostat.up();
+    }
+    thermostat.resetTemperature();
+    expect(thermostat.getCurrentTemperature()).toEqual(20);
+  });
 });
