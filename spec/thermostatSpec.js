@@ -69,4 +69,31 @@ describe('Thermostat', () => {
     thermostat.resetTemperature();
     expect(thermostat.getCurrentTemperature()).toEqual(20);
   });
+
+  describe('when viewing the energy usage of the thermostat', () => {
+    describe('when temperature is below 18 degrees', () => {
+      it('has low energy usage', () => {
+        for (let i = 0; i < 3; i++) {
+          thermostat.down();
+        }
+        expect(thermostat.getEnergyUsage()).toEqual('low');
+      });
+    });
+    
+    describe('when temperature is above 25 degrees', () => {
+      it('has high usage', () => {
+        for (let i = 0; i < 7; i++) {
+          thermostat.up();
+        }
+        expect(thermostat.getEnergyUsage()).toEqual('high');
+      });
+    });
+
+    describe('when temperature is between 18 and 25 degrees', () => {
+      it('has medium usage', () => {
+        expect(thermostat.getEnergyUsage()).toEqual('medium');
+      });
+    });
+  });
+
 });

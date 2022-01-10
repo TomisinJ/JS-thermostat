@@ -58,3 +58,9 @@ As a user,
 So that I can regulate the temperature,
 The thermostat can be reset to 20 degrees
 ```
+
+```
+As a user,
+So that I can see energy usage,
+The thermostat can display current energy usage
+```

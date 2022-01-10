@@ -55,4 +55,21 @@ class Thermostat{
     this.temperature = this.DEFAULT_TEMPERATURE;
   }
 
+  getEnergyUsage() {
+    if (this.temperature < 18) {
+      return 'low';
+    } else if (this.temperature <= 25) {
+      return 'medium';
+    } else {
+      return 'high';
+    }
+  }
+
 };
+
+// let thermostat = new Thermostat;
+
+// thermostat.up()
+// thermostat.down()
+// thermostat.down()
+// console.log(thermostat)
