@@ -80,14 +80,14 @@ describe('Thermostat', () => {
       });
     });
     
-    describe('when temperature is above 25 degrees', () => {
-      it('has high usage', () => {
-        for (let i = 0; i < 7; i++) {
-          thermostat.up();
-        }
-        expect(thermostat.getEnergyUsage()).toEqual('high');
-      });
-    });
+    // describe('when temperature is above 25 degrees', () => {
+    //   it('has high usage', () => {
+    //     for (let i = 0; i < 7; i++) {
+    //       thermostat.up();
+    //     }
+    //     expect(thermostat.getEnergyUsage()).toEqual('high');
+    //   });
+    // });
 
     describe('when temperature is between 18 and 25 degrees', () => {
       it('has medium usage', () => {
