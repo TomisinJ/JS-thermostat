@@ -64,3 +64,17 @@ As a user,
 So that I can see energy usage,
 The thermostat can display current energy usage
 ```
+
+Controls
+- up : thermostat.up()
+- down : thermostat.down()
+- PSM on : thermostat.switchPowerSavingModeOn()
+- PSM off : thermostat.switchPowerSavingModeOff()
+- reset : thermostat.resetTemperature()
+
+Displayed Data
+- display temperature : thermostat.getCurrentTemperature()
+
+Changing Displayed Data
+- PSM on : thermostat.isPowerSavingModeOn()
+- Energy usage : thermostat.getEnergyUsage()
